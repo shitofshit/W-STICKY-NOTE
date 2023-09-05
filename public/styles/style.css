@@ -1,0 +1,116 @@
+html {
+  min-height: 1000px;
+}
+
+body {
+  background-image: linear-gradient(to right, #beadfa, #fff3da);
+  font-family: "helvetica neue";
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  min-height: 98vh;
+}
+
+h1 {
+  color: #fff;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+/* Header pill CSS*/
+.nav-link {
+  --bs-nav-link-color: #ffffff;
+  --bs-nav-link-hover-color: #9400FF;
+}
+
+.nav-pills {
+  font-weight: 600;
+  --bs-nav-pills-link-active-bg: #974ec3;
+}
+
+.svg {
+  filter: invert(99%) sepia(31%) saturate(346%) hue-rotate(184deg)
+    brightness(116%) contrast(87%);
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+/* Content CSS */
+main {
+  text-align: center;
+  flex: 1 0 auto;
+}
+#heading {
+  background-color: #a683e3;
+  text-align: center;
+}
+.box {
+  max-width: 40vh;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.item {
+
+  display: flex;
+  justify-content: center;
+  flex: 1 0 auto;
+  border-bottom: 1px solid;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input:checked + p {
+  text-decoration: line-through;
+  text-decoration-color: #a683e3;
+}
+
+p {
+  margin: 0;
+  padding: 10px;
+  font-size: 20px;
+  /* font-weight: 200; */
+  color: #00204a;
+}
+
+form {
+  text-align: center;
+  margin-left: 20px;
+}
+
+button {
+  min-height: 10px;
+  width: 50px;
+  border-radius: 10%;
+  background-color: #a683e3;
+  color: #fff;
+  font-size: 30px;
+  border-width: 0;
+  margin: auto 10px auto auto;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 413px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: lightgray;
+  opacity: 1;
+}
+
+/* Footer css */

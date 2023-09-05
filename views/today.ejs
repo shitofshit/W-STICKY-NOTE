@@ -1,0 +1,35 @@
+<%- include('partials/header.ejs') %>
+
+<div class="box" id="heading">
+  <h1><%= daynames[day] %>, <%=monthnames[month]%> <%= dayt %></h1>
+  </div>
+  <div class="box">
+    <form class="item" action="/adder" method="post">
+      <input
+        type="text"
+        name="newItem2"
+        placeholder="New Item"
+        autocomplete="off"
+      />
+      <button type="submit" name="list" value="Tuesday," september="" 5="">
+        +
+      </button>
+    </form>
+
+
+    <% for(var i = listItems.length -1; i >= 0; i--){ %>
+        <div class="item">
+          <input
+            type="checkbox"
+            id="todo"
+            name="checker"
+            class="h-7 w-7 m-3 flex-shrink-0"
+          />
+          <p><%= listItems[i] %></p>
+        </div>
+        <% } %>
+
+    
+  </div>
+
+  <%- include('partials/footer.ejs') %>
